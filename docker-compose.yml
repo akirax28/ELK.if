@@ -22,7 +22,7 @@ services:
       replicas: 1
       endpoint_mode: dnsrr
   kibana:
-    image: kibana:latest
+    image: kibana:6.5.4
     ports:
       - "5601:5601"
     environment:
