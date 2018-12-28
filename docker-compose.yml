@@ -13,8 +13,10 @@ services:
         hard: 65536
         soft: 65536
       nproc: 65538
+    #volume where the data will be
     volumes:
       - /data/elk:/usr/share/elasticsearch/data
+    #
     networks:
       - elk
     deploy:
