@@ -14,7 +14,7 @@ services:
         soft: 65536
       nproc: 65538
     volumes:
-      - /usr/share/elasticsearch/data
+      - /data/elk:/usr/share/elasticsearch/data
     networks:
       - elk
     deploy:
